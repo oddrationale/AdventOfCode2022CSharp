@@ -7,6 +7,5 @@ mkdir -p /srv/conda/envs/notebook/lib/dotnet/sdk-manifests
 # Install dotnet-interactive jupyter kernel
 export DOTNET_ROOT="/srv/conda/envs/notebook/lib/dotnet"
 export PATH=$PATH:$DOTNET_ROOT:~/.dotnet/tools
-dotnet tool install -g Microsoft.dotnet-interactive \
-    --add-source "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json"
+dotnet tool install -g Microsoft.dotnet-interactive
 dotnet interactive jupyter install
